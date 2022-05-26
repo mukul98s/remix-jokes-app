@@ -2,6 +2,9 @@
   "name": "remix-template-remix",
   "private": true,
   "sideEffects": false,
+  "prisma": {
+    "seed": "node --require esbuild-register prisma/seed.ts"
+  },
   "scripts": {
     "build": "remix build",
     "dev": "remix dev",
@@ -20,6 +23,7 @@
     "@remix-run/eslint-config": "^1.5.1",
     "@types/react": "^17.0.45",
     "@types/react-dom": "^17.0.17",
+    "esbuild-register": "^3.3.2",
     "eslint": "^8.15.0",
     "install": "^0.13.0",
     "npm": "^8.11.0",
